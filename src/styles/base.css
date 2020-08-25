@@ -1,0 +1,169 @@
+/* Font (see https://fonts.google.com) */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400&display=swap');
+
+/* Prism Code Highlighting Theme (see https://prismjs.com) */
+@import url('https://cdn.jsdelivr.net/npm/prism-themes@1.4.0/themes/prism-dracula.css');
+
+html,
+body {
+  @apply antialiased text-gray-600 bg-gray-900;
+  font-family: 'Open Sans', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @apply font-bold leading-tight mt-3;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+h1 > a,
+h2 > a,
+h3 > a,
+h4 > a,
+h5 > a,
+h6 > a,
+a {
+  @apply text-gray-300;
+}
+
+h1 {
+  @apply text-5xl;
+}
+
+h2 {
+  @apply text-3xl;
+}
+
+h3 {
+  @apply text-2xl;
+}
+
+h4 {
+  @apply text-xl;
+}
+
+a {
+  @apply font-bold;
+}
+
+a:hover {
+  @apply underline;
+}
+
+p {
+  @apply text-lg;
+}
+
+pre {
+  @apply my-2 text-sm tracking-wider break-words;
+  border-radius: 25px;
+}
+
+hr {
+  @apply mt-4 mb-2 border-dotted border-b border-gray-600;
+}
+
+.attribution {
+  @apply text-right -mt-8 text-sm;
+}
+
+.attribution::before {
+  content: '— ';
+}
+
+.content > blockquote {
+  border-left: 0.5rem solid #718096;
+  margin: 1.5em 1.5em;
+  padding: 0.5em 1em;
+}
+
+.content > img {
+  display: block;
+  margin: 0 auto;
+  margin-top: 1rem;
+  max-width: 100%;
+  min-width: 100px;
+}
+
+.content > ul {
+  list-style-type: disc;
+}
+
+.content > ol {
+  list-style-type: decimal;
+}
+
+.content > ol > li,
+.content > ul > li {
+  @apply text-lg mr-12 ml-12 pr-2 pl-2;
+}
+
+.content > p {
+  @apply pt-3;
+}
+
+.excerpt {
+  @apply mb-2;
+}
+
+.next-page,
+.previous-page,
+.first-page,
+.last-page {
+  @apply font-bold whitespace-no-wrap text-center;
+}
+
+.next-page::after {
+  content: " ►";
+}
+
+.previous-page::before {
+  content: "◄ ";
+}
+
+.first-page::before {
+  content: "| ";
+}
+
+.last-page::after {
+  content: " |";
+}
+
+.top-notice {
+  @apply sticky top-0 flex justify-center bg-blue-600 py-1 text-sm;
+}
+
+.top-notice > a::before {
+  content: "🔥 ";
+}
+
+.top-notice > a::after {
+  content: " 🔥";
+}
+
+#privacy-notice-button {
+  fill: #fff;
+}
+
+#privacy-notice-button-container {
+  margin-top: 2px;
+  @apply p-2;
+}
+
+#privacy-notice-button-container:hover {
+  @apply bg-gray-700 rounded cursor-pointer;
+}
+
+.caption {
+  @apply text-center text-sm text-gray-500 w-3/4 pb-4 mx-auto w-full;
+  margin: 0 auto;
+}

@@ -1,0 +1,26 @@
+---
+pagination:
+  data: collections
+  size: 1
+  alias: tag
+  addAllPagesToCollections: false
+  filter:
+    - all
+    - post
+    - draft
+eleventyComputed:
+  title: "{{ tag }}"
+permalink: /tag/{{ tag }}/
+---
+
+{% extends 'page.njk' %}
+
+{% block body %}
+  <p class="text-center text-sm italic mb-6">(Posts filtered by <strong>{{tag}}</strong>.)</p>
+
+  {% set posts = collections[tag] | reverse %}
+
+  {% include "posts.njk" %}
+
+  {% include "tags.njk" %}
+{% endblock %}

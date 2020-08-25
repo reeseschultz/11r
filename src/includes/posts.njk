@@ -1,0 +1,23 @@
+<div>
+    {% for post in posts %}
+        {% if not post.data.draft %}
+            <div class="mb-8 border-dotted border-b pb-8 border-gray-600">
+                <h2>
+                    <a class="block" href="{{ post.url | url }}">{{ post.data.title }}</a>
+                </h2>
+
+                <p class="excerpt">{{ post.data.excerpt }}</p>
+
+                {% for tag in post.data.tags %}
+                    {%- if tag !== "post" -%}
+                        <a class="tag {{ tag | replace('.', '') }}" href="{{ site.baseUrl }}tag/{{ tag }}">{{ tag }}</a>
+                    {%- endif -%}
+                {% endfor %}
+
+                <span class="block md:inline md:float-right md:pt-4 pt-2 created-date" datetime="{{ post.data.date }}">
+                    {{ post.data.date | dateDisplay }}
+                </span>
+            </div>
+        {% endif %}
+    {% endfor %}
+</div>

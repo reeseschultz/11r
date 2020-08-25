@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    {# Google Schema #}
+    <meta itemprop="name" content="{% if metaTitle %}{{ metaTitle }}{% else %}{{ title }}{{ ' | '}}{% endif %}{{ site.name }}">
+    <meta itemprop="description" content="{% if excerpt %}{{ excerpt }}{% else %}{{ site.description }}{% endif %}">
+
+    {# Twitter #}
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="{% if metaTitle %}{{ metaTitle }}{% else %}{{ title }}{{ ' | '}}{% endif %}{{ site.name }}">
+    <meta name="twitter:description" content="{% if excerpt %}{{ excerpt }}{% else %}{{ site.description }}{% endif %}">
+    <meta name="twitter:site" content="{{ site.author.handle }}">
+    <meta name="twitter:creator" content="{{ site.author.handle }}">
+    <meta name="twitter:image:src" content="{{ site.url }}{{ site.baseUrl }}{{ site.images.twitter }}">
+
+    {# Open Graph #}
+    <meta name="og:title" content="{% if metaTitle %}{{ metaTitle }}{% else %}{{ title }}{{ ' | '}}{% endif %}{{ site.name }}">
+    <meta name="og:description" content="{% if excerpt %}{{ excerpt }}{% else %}{{ site.description }}{% endif %}">
+    <meta name="og:image" content="{{ site.url }}{{ site.baseUrl }}{{ site.images.og }}">
+    <meta name="og:url" content="{{ site.url }}{{ site.baseUrl }}{{ page.url }}">
+    <meta name="og:site_name" content="{{ site.name }}">
+    <meta name="og:locale" content="en_GB">
+    <meta name="og:type" content="website">
+
+    <link rel="icon" type="image/x-icon" href="{{ site.baseUrl }}favicon.ico" />
+
+    <title>{% if metaTitle %}{{ metaTitle }}{% else %}{{ title }}{% endif %}{% if metaTitle or title %} | {% endif %}{{ site.name }}</title>
+
+    <link rel="stylesheet" href="{{ site.baseUrl }}assets/main.bundle.css">
+
+    {% block head %}{% endblock %}
+  </head>
+  <body class="flex flex-col min-h-screen">
+    {% include 'top-notice.njk' %}
+    {% include 'header.njk' %}
+    <main class="container mx-auto max-w-3xl p-8 flex-grow">
+      {% block body %}{% endblock %}
+    </main>
+    {% include 'footer.njk' %}
+    {% include 'privacy-notice.njk' %}
+    <script src="https://unpkg.com/clipboard@2/dist/clipboard.min.js"></script>
+    <script src="{{ site.baseUrl }}assets/main.bundle.js"></script>
+  </body>
+</html>

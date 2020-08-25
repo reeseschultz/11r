@@ -1,0 +1,57 @@
+---
+permalink: "{% if path %}{{ path | slug }}{% else %}{{'/post/'}}{{ title | slug }}{% endif %}/index.html"
+---
+
+{% extends 'page.njk' %}
+
+{% block body %}
+    <p>{{url}}</p>
+    <div>
+        <h2>{{ title }}</h2>
+
+        {% if excerpt %}
+            <p class="excerpt">{{ excerpt }}</p>
+        {% endif %}
+
+        {% if tags %}
+            <div class="mb-2">
+                {% for tag in tags %}
+                    {%- if tag !== "post" -%}
+                        <a class="tag {{ tag | replace('.', '') }}" href="{{ site.baseUrl }}tag/{{ tag }}">{{ tag }}</a>
+                    {%- endif -%}
+                {% endfor %}
+            </div>
+        {% endif %}
+
+        {% if date %}
+            {% if updatedDate | string in date | string %}
+                <p class="text-sm italic">Created on
+                    <span datetime="{{ date }}">{{ date | dateDisplay }}</span>.</p>
+            {% else %}
+                <p class="text-sm italic">Last updated on
+                    <span datetime="{{ date }}">{{ updatedDate | dateDisplay }}</span>. Created on
+                    <span datetime="{{ date }}">{{ date | dateDisplay }}</span>.</p>
+            {% endif %}
+        {% endif %}
+
+        <div class="content post">
+            {{ content | safe }}
+        </div>
+
+        {%- set nextPost = collections['postsWithoutDrafts'] | getNextCollectionItem(page) %}
+        {%- if nextPost %}
+            <p class="uppercase text-xs mt-6">Next</p>
+            <p class="font-bold mb-2">
+                <a href="{{ nextPost.url | url }}">{{ nextPost.data.title }}</a>
+            </p>
+        {% endif %}
+        {%- set previousPost = collections['postsWithoutDrafts'] | getPreviousCollectionItem(page) %}
+        {%- if previousPost %}
+            <p class="uppercase text-xs mt-6">Previous</p>
+
+            <p class="font-bold">
+                <a href="{{ previousPost.url | url }}">{{ previousPost.data.title }}</a>
+            </p>
+        {% endif %}
+    </div>
+{% endblock %}

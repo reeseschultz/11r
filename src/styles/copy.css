@@ -1,0 +1,14 @@
+.copy {
+    @apply text-xs p-1 cursor-pointer absolute top-0 right-0 opacity-25 bg-red-700 text-white;
+    font-family: Consolas, monaco, monospace;
+    content: "copy";
+    transition: all 200ms ease;
+}
+
+.copy:hover {
+    @apply p-4 opacity-100;
+}
+
+pre {
+    @apply relative;
+}
