@@ -4,12 +4,11 @@
     "url": "https://reeseschultz.github.io",
     "baseUrl": "/11r/",
     "author": {
-        "email": "reeseschultz@gmail.com",
         "handle": "@TheReeseSchultz",
         "name": "Reese Schultz"
     },
     "images": {
-        "twitter": "/twitter.jpg",
-        "og": "/og.jpg"
+        "twitter": "twitter.jpg",
+        "og": "og.jpg"
     }
 }
