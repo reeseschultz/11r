@@ -56,6 +56,6 @@ Tags are styled in `src/styles/tags.css`. Coloring custom tags works as such:
 
 ## Contributing
 
-Find a problem, or have an improvement in mind? Great. Go ahead and submit a pull request. Note that the maintainer offers no assurance he will respond to you, fix bugs or add features on your behalf in a timely fashion, if ever. All that said, [GitHub Issues](https://github.com/reeseschultz/11r/issues) is fine for constructive discussion.
+Find a problem, or have an improvement in mind? Great. Go ahead and submit a pull request. Note that the maintainer offers no assurance he will respond to you, fix bugs or add features on your behalf in a timely fashion, if ever. All that said, [GitHub Issues](https://github.com/reeseschultz/11r/issues/new/choose) is fine for constructive discussion.
 
 By submitting a pull request, you agree to license your work under [this project's MIT license](https://github.com/reeseschultz/11r/blob/main/LICENSE).
