@@ -9,7 +9,7 @@ View the [demo](https://reeseschultz.github.io/11r/).
 * [Eleventy](https://www.11ty.dev) for static site generation. See `.eleventy.js`.
 * [Nunjucks](https://mozilla.github.io/nunjucks/) for templating.
 * [TailwindCSS](https://tailwindcss.com/) for utility-first styling. See `tailwind.config.js` and `src/styles/tailwind.css`.
-* [Prism](https://prismjs.com/) syntax highlighting for code with copy button scripting included. See `src/styles/base.css` for the theme; and `src/scripts/copy.js`, which is used by `main.js`.
+* [Prism](https://prismjs.com/) syntax highlighting for code with copy button scripting included via [clipboard.js](https://clipboardjs.com/). See `src/styles/base.css` for the theme; and `src/scripts/copy.js`, which is used by `main.js`.
 * [Rollup](https://rollupjs.org) for bundling and compiling. See `rollup.config.js`.
 * JavaScript-based privacy policy notice dismissal handling. See `src/scripts/privacy-policy.js`, which is used by `main.js`.
 * [Tags](https://www.11ty.dev/docs/collections/).
