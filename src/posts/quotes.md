@@ -5,9 +5,9 @@ excerpt: Because it's easier to reuse profound quotes than make your own.
 date: 1901-05-06
 updatedDate: 1902-02-02
 tags:
-    - post
-    - beer
-    - cats
+  - post
+  - beer
+  - cats
 ---
 
 > To the dumb question "Why me?" the cosmos barely bothers to return the reply: why not?

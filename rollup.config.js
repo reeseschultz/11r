@@ -1,9 +1,9 @@
-import postcss from 'rollup-plugin-postcss'
-import replace from '@rollup/plugin-replace'
-import svg from 'rollup-plugin-svg'
-import { terser } from 'rollup-plugin-terser'
+import postcss from 'rollup-plugin-postcss';
+import replace from '@rollup/plugin-replace';
+import svg from 'rollup-plugin-svg';
+import { terser } from 'rollup-plugin-terser';
 
-const dev = process.env.NODE_ENV !== 'production'
+const dev = process.env.NODE_ENV !== 'production';
 
 export default {
   input: 'src/scripts/main.js',
@@ -27,4 +27,4 @@ export default {
   watch: {
     clearScreen: false,
   },
-}
+};

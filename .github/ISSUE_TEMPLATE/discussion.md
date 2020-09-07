@@ -1,10 +1,7 @@
 ---
 name: Discussion
 about: Discuss the project and/or something related.
-title: "[DISCUSSION]"
+title: '[DISCUSSION]'
 labels: ''
 assignees: ''
-
 ---
-
-

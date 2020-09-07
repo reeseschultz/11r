@@ -5,9 +5,9 @@ excerpt: This is an unfinished post that has been marked as a draft via front ma
 date: 1945-05-05
 updatedDate: 1945-05-05
 tags:
-    - post
-    - orcas
-    - beer
+  - post
+  - orcas
+  - beer
 draft: true
 ---
 

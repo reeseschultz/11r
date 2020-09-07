@@ -1,10 +1,9 @@
 ---
 name: Bug report
-about: 'You found a bug or problem. '
-title: "[BUG]"
+about: 'You found a bug or problem.'
+title: '[BUG]'
 labels: triage
 assignees: ''
-
 ---
 
 **Bug description:**

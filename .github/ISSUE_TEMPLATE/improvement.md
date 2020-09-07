@@ -1,10 +1,9 @@
 ---
 name: Improvement
 about: Suggest an improvement.
-title: "[IMPROVEMENT]"
+title: '[IMPROVEMENT]'
 labels: triage
 assignees: ''
-
 ---
 
 **Is the improvement related to a problem? Please describe.**
