@@ -1,17 +1,17 @@
-import postcss from 'rollup-plugin-postcss'
-import replace from '@rollup/plugin-replace'
-import svg from 'rollup-plugin-svg'
-import { terser } from 'rollup-plugin-terser'
+import postcss from "rollup-plugin-postcss";
+import replace from "@rollup/plugin-replace";
+import svg from "rollup-plugin-svg";
+import { terser } from "rollup-plugin-terser";
 
-const dev = process.env.NODE_ENV !== 'production'
+const dev = process.env.NODE_ENV !== "production";
 
 export default {
-  input: 'src/scripts/main.js',
+  input: "src/scripts/main.js",
   output: {
     sourcemap: false,
-    format: 'iife',
-    name: 'main',
-    file: 'dist/assets/main.bundle.js',
+    format: "iife",
+    name: "main",
+    file: "dist/assets/main.bundle.js",
   },
   plugins: [
     replace({
@@ -19,7 +19,7 @@ export default {
     }),
     svg(),
     postcss({
-      extract: 'dist/assets/main.bundle.css',
+      extract: "dist/assets/main.bundle.css",
       minimize: !dev,
     }),
     !dev && terser(),
@@ -27,4 +27,4 @@ export default {
   watch: {
     clearScreen: false,
   },
-}
+};

@@ -5,8 +5,8 @@ excerpt: "You know what time it is: lorem ipsum time."
 date: 1918-11-04
 updatedDate: 1918-11-04
 tags:
-    - post
-    - stoicism
+  - post
+  - stoicism
 ---
 
 ### Lorem

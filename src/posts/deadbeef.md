@@ -5,8 +5,8 @@ excerpt: How to decrement from a magic debug value to zero.
 date: 2016-10-09
 updatedDate: 2016-10-09
 tags:
-    - post
-    - spirituality
+  - post
+  - spirituality
 ---
 
 ```nasm
@@ -31,3 +31,4 @@ exit:
   mov rax, 60
   syscall
 ``
+```

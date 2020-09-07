@@ -3,8 +3,7 @@ name: Improvement
 about: Suggest an improvement.
 title: "[IMPROVEMENT]"
 labels: triage
-assignees: ''
-
+assignees: ""
 ---
 
 **Is the improvement related to a problem? Please describe.**

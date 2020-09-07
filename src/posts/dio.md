@@ -5,10 +5,10 @@ excerpt: You've been down too long in the midnight sea.
 date: 1935-01-28
 updatedDate: 1935-02-04
 tags:
-    - post
-    - beer
-    - cats
-    - enchiladas
+  - post
+  - beer
+  - cats
+  - enchiladas
 ---
 
 ![Photograph of Dio.](/11r/dio.jpg "Holy Diver")
