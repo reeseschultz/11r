@@ -1,10 +1,10 @@
 // Adapted from https://codepen.io/wilbo/pen/xRVLOj by Wilbert Schepenaar.
 
 const handleCodeCopying = () => {
-  const preTags = document.getElementsByTagName("pre");
+  const preTags = document.getElementsByTagName('pre');
 
   const isPrismClass = (preTag) =>
-    preTag.className.substring(0, 8) === "language";
+    preTag.className.substring(0, 8) === 'language';
 
   if (preTags !== null) {
     for (let i = 0; i < preTags.length; i++) {
@@ -15,15 +15,15 @@ const handleCodeCopying = () => {
     }
   }
 
-  const clipboard = new ClipboardJS(".copy", {
+  const clipboard = new ClipboardJS('.copy', {
     target: (trigger) => trigger.nextElementSibling,
   });
 
-  clipboard.on("success", (event) => {
-    event.trigger.textContent = "copied!";
+  clipboard.on('success', (event) => {
+    event.trigger.textContent = 'copied!';
     setTimeout(() => {
       event.clearSelection();
-      event.trigger.textContent = "copy";
+      event.trigger.textContent = 'copy';
     }, 2000);
   });
 };

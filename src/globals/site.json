@@ -1,14 +1,14 @@
 {
-    "name": "11r",
-    "description": "america's favorite eleventy blog template",
-    "url": "https://reeseschultz.github.io",
-    "baseUrl": "/11r/",
-    "author": {
-        "handle": "@TheReeseSchultz",
-        "name": "Reese Schultz"
-    },
-    "images": {
-        "twitter": "twitter.jpg",
-        "og": "og.jpg"
-    }
+  "name": "11r",
+  "description": "america's favorite eleventy blog template",
+  "url": "https://reeseschultz.github.io",
+  "baseUrl": "/11r/",
+  "author": {
+    "handle": "@TheReeseSchultz",
+    "name": "Reese Schultz"
+  },
+  "images": {
+    "twitter": "twitter.jpg",
+    "og": "og.jpg"
+  }
 }
