@@ -14,7 +14,7 @@ eleventyExcludeFromCollections: true
     "url": "{{ site.url }}"
   },
   "items": [
-    {%- for post in collections.post | reverse %}
+    {%- for post in collections['postsWithoutDrafts'] | reverse %}
     {%- set absolutePostUrl %}{{ post.url | url | absoluteUrl(site.url) }}{% endset -%}
     {
       "id": "{{ absolutePostUrl }}",
