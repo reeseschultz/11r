@@ -1,5 +1,7 @@
 # 11r
 
+[![Discord Shield](https://discordapp.com/api/guilds/732665868521177117/widget.png?style=shield)](https://discord.gg/CZ85mguYjK)
+
 America's favorite [Eleventy](https://www.11ty.dev) blog template. Built by [Reese Schultz](https://reeseschultz.com).
 
 View the [demo](https://reeseschultz.github.io/11r/).
