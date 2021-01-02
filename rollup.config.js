@@ -2,6 +2,7 @@ import postcss from 'rollup-plugin-postcss';
 import replace from '@rollup/plugin-replace';
 import svg from 'rollup-plugin-svg';
 import { terser } from 'rollup-plugin-terser';
+import path from 'path';
 
 const dev = process.env.NODE_ENV !== 'production';
 
@@ -19,7 +20,7 @@ export default {
     }),
     svg(),
     postcss({
-      extract: 'dist/assets/main.bundle.css',
+      extract: path.resolve('dist/assets/main.bundle.css'),
       minimize: !dev,
     }),
     !dev && terser(),

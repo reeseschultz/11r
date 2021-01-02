@@ -24,11 +24,11 @@
 }
 
 .tag.enchiladas {
-  @apply bg-orange-700;
+  @apply bg-yellow-700;
 }
 
 .tag.beer {
-  @apply bg-teal-700;
+  @apply bg-blue-700;
 }
 
 .tag.spirituality {

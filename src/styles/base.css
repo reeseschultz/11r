@@ -10,7 +10,7 @@
 
 html,
 body {
-  @apply antialiased text-gray-600 bg-gray-900;
+  @apply antialiased text-gray-500 bg-gray-900;
   font-family: 'Open Sans', sans-serif;
 }
 
@@ -123,7 +123,7 @@ hr {
 .previous-page,
 .first-page,
 .last-page {
-  @apply font-bold whitespace-no-wrap text-center;
+  @apply font-bold whitespace-nowrap text-center;
 }
 
 .next-page::after {
@@ -168,6 +168,6 @@ hr {
 }
 
 .caption {
-  @apply text-center text-sm text-gray-500 w-3/4 pb-4 mx-auto w-full;
+  @apply text-center text-sm text-gray-400 w-3/4 pb-4 mx-auto w-full;
   margin: 0 auto;
 }

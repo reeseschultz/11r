@@ -7,15 +7,12 @@ module.exports = {
       './src/**/*.md',
     ],
   },
-  plugins: [require('@tailwindcss/custom-forms')],
+  plugins: [require('@tailwindcss/forms')],
   theme: {
     extend: {
       fontFamily: {
         inter: '"Inter", sans-serif;',
       },
     },
-  },
-  future: {
-    removeDeprecatedGapUtilities: true,
-  },
+  }
 };

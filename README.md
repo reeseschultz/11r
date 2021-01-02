@@ -2,7 +2,7 @@
 
 [![Discord Shield](https://discordapp.com/api/guilds/732665868521177117/widget.png?style=shield)](https://discord.gg/CZ85mguYjK)
 
-America's favorite [Eleventy](https://www.11ty.dev) blog template. Built by [Reese Schultz](https://reeseschultz.com).
+America's favorite [Eleventy](https://www.11ty.dev) blog template. Built by [Reese Schultz](https://github.com/reeseschultz).
 
 View the [demo](https://reeseschultz.github.io/11r/).
 
@@ -36,7 +36,7 @@ Tags are styled in `src/styles/tags.css`. Coloring custom tags works as such:
 ...
 
 .tag.beer {
-  @apply bg-teal-700;
+  @apply bg-blue-700;
 }
 
 .tag.spirituality {
