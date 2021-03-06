@@ -24,12 +24,12 @@ permalink: "{% if path %}{{ path | slug }}{% else %}{{'/post/'}}{{ title | slug 
         {% endif %}
 
         {% if date %}
-            {% if updatedDate | string in date | string %}
-                <p class="text-sm italic">Created on
+            {% if updatedDate %}
+              <p class="text-sm italic">Last updated on
+                    <span datetime="{{ date }}">{{ updatedDate | dateDisplay }}</span>. Created on
                     <span datetime="{{ date }}">{{ date | dateDisplay }}</span>.</p>
             {% else %}
-                <p class="text-sm italic">Last updated on
-                    <span datetime="{{ date }}">{{ updatedDate | dateDisplay }}</span>. Created on
+                <p class="text-sm italic">Created on
                     <span datetime="{{ date }}">{{ date | dateDisplay }}</span>.</p>
             {% endif %}
         {% endif %}
