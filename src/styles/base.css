@@ -76,6 +76,18 @@ hr {
   @apply mt-4 mb-2 border-dotted border-b border-gray-600;
 }
 
+.toc {
+  @apply content;
+}
+
+.toc > ol {
+  @apply mt-2;
+}
+
+.toc > ol > li {
+  font-size: 1em;
+}
+
 .attribution {
   @apply text-right -mt-8 text-sm;
 }

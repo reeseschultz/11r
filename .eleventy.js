@@ -1,6 +1,19 @@
-const siteSettings = require('./src/globals/site.json');
+module.exports = config => {
+  const markdownIt = new require('markdown-it')({
+    typographer: true,
+    linkify: true,
+  });
 
-module.exports = (config) => {
+  const markdownItAnchor = require('markdown-it-anchor');
+  markdownIt.use(markdownItAnchor);
+
+  config.setLibrary('md', markdownIt);
+
+  config.addPlugin(require('eleventy-plugin-nesting-toc'), {
+    tags: ['h3', 'h4', 'h5'],
+    ul: false
+  });
+
   config.addPlugin(require('@11ty/eleventy-plugin-syntaxhighlight'));
   config.addPlugin(require("@11ty/eleventy-plugin-rss"));
 
@@ -22,7 +35,7 @@ module.exports = (config) => {
   );
 
   return {
-    pathPrefix: siteSettings.baseUrl,
+    pathPrefix: require('./src/globals/site.json').baseUrl,
     dir: {
       input: 'src',
       output: 'dist',

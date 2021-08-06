@@ -35,6 +35,16 @@ permalink: "{% if path %}{{ path | slug }}{% else %}{{'/post/'}}{{ title | slug 
         {% endif %}
 
         <div class="content post">
+            {% if content | toc %}
+                <hr />
+
+                <h3>Table of Contents</h3>
+
+                {{ content | toc | safe }}
+
+                <hr />
+            {% endif %}
+
             {{ content | safe }}
         </div>
 
