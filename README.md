@@ -6,13 +6,13 @@ America's favorite [Eleventy](https://www.11ty.dev) blog template.
 
 Maintained by [Reese](https://github.com/reeseschultz).
 
-[View the demo... 👀](https://reeseschultz.github.io/11r/)
+[View the demo 👀...](https://reeseschultz.github.io/11r/)
 
 ## Support
 
 Need support or software customization?
 
-[Read more about consulting with the maintainer... 🚀](https://reese.codes)
+[Read more about consulting with the maintainer 🚀... ](https://reese.codes)
 
 ## Features
 
