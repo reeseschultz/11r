@@ -155,7 +155,7 @@ hr {
 }
 
 .top-notice {
-  @apply sticky top-0 flex justify-center bg-blue-600 py-1 text-sm;
+  @apply sticky top-0 flex justify-center bg-blue-600 py-1 -mt-1 text-sm;
 }
 
 .top-notice > a::before {
