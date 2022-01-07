@@ -178,8 +178,3 @@ hr {
 #privacy-notice-button-container:hover {
   @apply bg-gray-500 rounded cursor-pointer;
 }
-
-.caption {
-  @apply text-center text-sm text-gray-400 w-3/4 pb-4 mx-auto w-full;
-  margin: 0 auto;
-}
