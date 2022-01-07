@@ -54,7 +54,7 @@ Tags are styled in `src/styles/tags.css`. Coloring custom tags works as such:
 
 ## Credits
 
-- This project was forked from [11ty Starter](https://github.com/mattwaler/eleventy-starter) by [Matt Waler](https://mattwaler.com/).
+- This project was forked from 11ty Starter by Matt Waler, which no longer exists.
 - The code copying script was adapted from [https://codepen.io/wilbo/pen/xRVLOj](https://codepen.io/wilbo/pen/xRVLOj) by [Wilbert Schepenaar](https://wilbert.dev/).
 - SEO handling was inspired from [Skeleventy](https://github.com/josephdyer/skeleventy) by [Joseph Dyer](https://github.com/josephdyer).
 
