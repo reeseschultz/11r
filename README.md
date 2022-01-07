@@ -38,15 +38,15 @@ Tags are styled in `src/styles/tags.css`. Coloring custom tags works as such:
 ...
 
 .tag.beer {
-  @apply bg-blue-700;
+  @apply bg-blue-500;
 }
 
 .tag.spirituality {
-  @apply bg-indigo-700;
+  @apply bg-indigo-500;
 }
 
 .tag.orcas {
-  @apply bg-purple-700;
+  @apply bg-purple-500;
 }
 
 ...

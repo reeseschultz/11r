@@ -10,7 +10,7 @@
 
 html,
 body {
-  @apply antialiased text-gray-500 bg-gray-900;
+  @apply antialiased text-gray-300 bg-gray-900;
   font-family: 'Open Sans', sans-serif;
 }
 
@@ -36,7 +36,7 @@ h4 > a,
 h5 > a,
 h6 > a,
 a {
-  @apply text-gray-300;
+  @apply text-white;
 }
 
 h1 {
@@ -64,7 +64,7 @@ a:hover {
 }
 
 p {
-  @apply text-lg;
+  @apply text-lg my-2;
 }
 
 pre {
@@ -73,7 +73,7 @@ pre {
 }
 
 hr {
-  @apply mt-4 mb-2 border-dotted border-b border-gray-600;
+  @apply mt-4 mb-2 border-dotted border-b border-gray-300;
 }
 
 .toc {
@@ -128,7 +128,7 @@ hr {
 }
 
 .excerpt {
-  @apply mb-2;
+  @apply my-3;
 }
 
 .next-page,
@@ -176,7 +176,7 @@ hr {
 }
 
 #privacy-notice-button-container:hover {
-  @apply bg-gray-700 rounded cursor-pointer;
+  @apply bg-gray-500 rounded cursor-pointer;
 }
 
 .caption {

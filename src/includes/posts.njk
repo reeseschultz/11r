@@ -1,7 +1,7 @@
 <div>
     {% for post in posts %}
         {% if not post.data.draft %}
-            <div class="mb-8 border-dotted border-b pb-8 border-gray-600">
+            <div class="mb-8 border-dotted border-b pb-8 border-gray-300">
                 <h2>
                     <a class="block" href="{{ post.url | url }}">{{ post.data.title }}</a>
                 </h2>
