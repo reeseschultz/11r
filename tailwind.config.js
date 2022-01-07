@@ -1,12 +1,10 @@
 module.exports = {
-  purge: {
-    content: [
-      './src/**/*.njk',
-      './src/**/*.js',
-      './src/**/*.svg',
-      './src/**/*.md',
-    ],
-  },
+  content: [
+    './src/**/*.njk',
+    './src/**/*.js',
+    './src/**/*.svg',
+    './src/**/*.md',
+  ],
   plugins: [require('@tailwindcss/forms')],
   theme: {
     extend: {
