@@ -1,31 +1,30 @@
 // Adapted from https://codepen.io/wilbo/pen/xRVLOj by Wilbert Schepenaar.
 
+const CLEAR_SELECTION_DELAY = 2000;
+
+const isPrismClass = preTag =>
+  preTag.className.substring(0, 8) === 'language';
+
 const handleCodeCopying = () => {
   const preTags = document.getElementsByTagName('pre');
 
-  const isPrismClass = (preTag) =>
-    preTag.className.substring(0, 8) === 'language';
+  if (!preTags) return;
 
-  if (preTags !== null) {
-    for (let i = 0; i < preTags.length; i++) {
-      if (!isPrismClass(preTags[i])) continue;
-
-      preTags[
-        i
-      ].innerHTML = `<div class="copy">copy</div>${preTags[i].innerHTML}`;
-    }
-  }
+  for (const preTag of preTags)
+    if (isPrismClass(preTag))
+      preTag.innerHTML = `<div class="copy">copy</div>${preTag.innerHTML}`;
 
   const clipboard = new ClipboardJS('.copy', {
-    target: (trigger) => trigger.nextElementSibling,
+    target: trigger => trigger.nextElementSibling,
   });
 
-  clipboard.on('success', (event) => {
+  clipboard.on('success', event => {
     event.trigger.textContent = 'copied!';
+
     setTimeout(() => {
       event.clearSelection();
       event.trigger.textContent = 'copy';
-    }, 2000);
+    }, CLEAR_SELECTION_DELAY);
   });
 };
 
